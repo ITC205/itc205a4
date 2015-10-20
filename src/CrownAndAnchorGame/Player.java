@@ -45,4 +45,9 @@ public class Player {
 	public String toString() {
 		return String.format("CrownAndAnchorGame.Player: %s, Balance: %d, Limit: %d", name, balance, limit);
 	}
+
+  public void refundBet(int bet) {
+    if (bet < 0) throw new IllegalArgumentException("Bet cannot be negative.");
+    balance = balance + bet;
+  }
 }
