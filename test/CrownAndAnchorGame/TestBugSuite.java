@@ -12,7 +12,8 @@ import org.junit.runners.Suite.SuiteClasses;
                {
                  TestBug1.class,
                  TestBug2.class,
-                 TestBug3.class
+                 TestBug3.class,
+                 TestBug4.class
                })
 
 public class TestBugSuite
